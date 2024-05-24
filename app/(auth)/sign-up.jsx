@@ -1,5 +1,5 @@
-import { Link } from "expo-router";
-import { Image, ScrollView, Text, View } from "react-native";
+import { Link, router } from "expo-router";
+import { Alert, Image, ScrollView, Text, View } from "react-native";
 import { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -16,8 +16,26 @@ const SignUp = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const onSubmit = () => {
-    createUser();
+  const onSubmit = async () => {
+    if (!form.username || !form.email || !form.password) {
+      Alert.alert("Error", "Please fill in all the fields.");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const result = await createUser(form.email, form.password, form.username);
+
+      // set it to the global state
+
+      router.replace("/home");
+    } catch (error) {
+      console.error(error);
+      Alert.alert("Error", error?.message);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
