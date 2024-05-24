@@ -6,9 +6,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import CustomButton from "../../components/custom-button";
 import FormField from "../../components/form-field";
 import { images } from "../../constants";
+import { useGlobalContext } from "../../context/global-provider";
 import { signIn } from "../../lib/appwrite";
 
 const SignIn = () => {
+  const { setUser, setIsLoggedIn } = useGlobalContext();
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -26,8 +28,10 @@ const SignIn = () => {
     try {
       const result = await signIn(form.email, form.password);
 
-      // set it to the global state
+      setUser(result);
+      setIsLoggedIn(true);
 
+      Alert.alert("Success", "User signed in successfully.");
       router.replace("/home");
     } catch (error) {
       console.error(error);
