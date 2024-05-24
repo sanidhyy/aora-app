@@ -6,6 +6,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import CustomButton from "../../components/custom-button";
 import FormField from "../../components/form-field";
 import { images } from "../../constants";
+import { createUser } from "../../lib/appwrite";
 
 const SignUp = () => {
   const [form, setForm] = useState({
@@ -15,7 +16,9 @@ const SignUp = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const onSubmit = () => {};
+  const onSubmit = () => {
+    createUser();
+  };
 
   return (
     <SafeAreaView className="bg-primary h-full">
