@@ -11,7 +11,7 @@ const TabIcon = ({ icon, color, name, focused }) => {
         alt={name}
         resizeMode="contain"
         tintColor={color}
-        className="w-6 h-6"
+        className="w-4 h-4"
       />
 
       <Text
@@ -36,7 +36,8 @@ const TabsLayout = () => {
             backgroundColor: "#161622",
             borderTopWidth: 1,
             borderTopColor: "#232533",
-            height: 84,
+            height: 100,
+            paddingTop: 5,
           },
         }}
       >
