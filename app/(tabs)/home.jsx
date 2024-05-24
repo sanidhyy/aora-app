@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Alert,
   FlatList,
@@ -14,11 +14,12 @@ import SearchInput from "../../components/search-input";
 import Trending from "../../components/trending";
 import VideoCard from "../../components/video-card";
 import { images } from "../../constants";
-import { getAllPosts } from "../../lib/appwrite";
+import { getAllPosts, getLatestPosts } from "../../lib/appwrite";
 import useAppwrite from "../../lib/use-appwrite";
 
 const Home = () => {
   const { data: posts, isLoading, refetch } = useAppwrite(getAllPosts);
+  const { data: latestPosts } = useAppwrite(getLatestPosts);
 
   const [refreshing, setRefreshing] = useState(false);
 
@@ -66,7 +67,7 @@ const Home = () => {
                 Latest Videos
               </Text>
 
-              <Trending posts={[{ $id: 1 }, { $id: 2 }, { $id: 3 }] ?? []} />
+              <Trending posts={latestPosts ?? []} />
             </View>
           </View>
         )}
