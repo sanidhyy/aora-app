@@ -13,6 +13,7 @@
     "expo": "~51.0.8",
     "expo-constants": "~16.0.1",
     "expo-linking": "~6.3.1",
+    "expo-navigation-bar": "^3.0.4",
     "expo-router": "~3.5.14",
     "expo-status-bar": "~1.12.1",
     "nativewind": "^2.0.11",
