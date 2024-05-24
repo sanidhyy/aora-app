@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import { Image, ScrollView, Text, View } from "react-native";
 import { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -5,7 +6,6 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import CustomButton from "../../components/custom-button";
 import FormField from "../../components/form-field";
 import { images } from "../../constants";
-import { Link } from "expo-router";
 
 const SignIn = () => {
   const [form, setForm] = useState({
