@@ -1,7 +1,10 @@
 import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
+import * as NavigationBar from "expo-navigation-bar";
 
+NavigationBar.setPositionAsync("absolute");
+NavigationBar.setBackgroundColorAsync("#161622");
 SplashScreen.preventAutoHideAsync();
 
 const RootLayout = () => {
