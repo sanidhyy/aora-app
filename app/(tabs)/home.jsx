@@ -13,10 +13,11 @@ import EmptyState from "../../components/empty-state";
 import SearchInput from "../../components/search-input";
 import Trending from "../../components/trending";
 import VideoCard from "../../components/video-card";
-import { images } from "../../constants";
+import { images, links } from "../../constants";
 import { useGlobalContext } from "../../context/global-provider";
 import { getAllPosts, getLatestPosts } from "../../lib/appwrite";
 import useAppwrite from "../../lib/use-appwrite";
+import { Link } from "expo-router";
 
 const Home = () => {
   const { user } = useGlobalContext();
@@ -52,12 +53,24 @@ const Home = () => {
                 </Text>
               </View>
 
-              <View className="mt-1.5">
+              <View className="flex flex-row space-x-4">
                 <Image
                   source={images.logoSmall}
-                  className="w-9 h-10"
+                  className="w-9 h-9"
                   resizeMode="contain"
                 />
+
+                <Link
+                  href={links.sourceCode}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <Image
+                    source={images.github}
+                    className="w-7 h-7"
+                    resizeMode="contain"
+                  />
+                </Link>
               </View>
             </View>
 
