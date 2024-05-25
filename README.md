@@ -2,9 +2,7 @@
 
 # Aora - Full-Stack AI Video Sharing Platform using Expo & React Native
 
-<p align="center">
-    <img src="/.github/images/img_main.png" alt="Aora - Full-Stack AI Video Sharing Platform using Expo & React Native" height="700" title="Aora - Full-Stack AI Video Sharing Platform using Expo & React Native" />
-</p>
+![Aora - Full-Stack AI Video Sharing Platform using Expo & React Native](/.github/images/img_main.png "Aora - Full-Stack AI Video Sharing Platform using Expo & React Native")
 
 [![Ask Me Anything!](https://flat.badgen.net/static/Ask%20me/anything?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy "Ask Me Anything!")
 [![GitHub license](https://flat.badgen.net/github/license/sanidhyy/aora-app?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/aora-app/blob/main/LICENSE "GitHub license")
