@@ -21,6 +21,7 @@ const VideoCard = ({
           <View className="w-[46px] h-[46px] rounded-lg border border-secondary justify-center items-center p-0.5">
             <Image
               source={{ uri: avatar }}
+              alt={`${username}'s avatar`}
               className="w-full h-full rounded-lg"
               resizeMode="cover"
             />
@@ -63,12 +64,14 @@ const VideoCard = ({
         >
           <Image
             source={{ uri: thumbnail }}
+            alt={`${title}'s thumbnail`}
             className="w-full h-full rounded-xl mt-3"
             resizeMode="cover"
           />
 
           <Image
             source={icons.play}
+            alt="Play video"
             className="w-12 h-12 absolute"
             resizeMode="contain"
           />

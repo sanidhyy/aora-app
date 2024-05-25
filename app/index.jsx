@@ -33,13 +33,14 @@ const App = () => {
           />
 
           <View className="relative mt-5">
-            <Text className="text-3xl text-white font-bold text-center">
+            <Text className="text-2xl text-white font-bold text-center">
               Discover endless possibilities with{" "}
               <Text className="text-secondary-200">Aora</Text>
             </Text>
 
             <Image
               source={images.path}
+              alt="Aora underline"
               className="w-[136px] h-[15px] absolute -bottom-2 -right-8"
               resizeMode="contain"
             />

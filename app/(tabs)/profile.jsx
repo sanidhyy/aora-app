@@ -38,6 +38,7 @@ const Profile = () => {
               <Text className="text-white text-lg font-pregular">Logout</Text>
               <Image
                 source={icons.logout}
+                alt="Logout"
                 resizeMode="contain"
                 className="w-6 h-6"
               />
@@ -46,6 +47,7 @@ const Profile = () => {
             <View className="w-16 h-16 border border-secondary rounded-lg justify-center items-center">
               <Image
                 source={{ uri: user?.avatar }}
+                alt={`${user?.username}'s profile picture`}
                 className="w-[90%] h-[90%] rounded-lg"
                 resizeMode="cover"
               />

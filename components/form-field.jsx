@@ -26,6 +26,7 @@ const FormField = ({
           onChangeText={handleChangeText}
           secureTextEntry={title === "Password" && !showPassword}
           editable={!isLoading}
+          autoCapitalize="none"
         />
 
         {title === "Password" && (

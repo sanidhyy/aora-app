@@ -113,6 +113,7 @@ const Create = () => {
                 <View className="w-14 h-14 border border-dashed border-secondary-100 justify-center items-center">
                   <Image
                     source={icons.upload}
+                    alt="Upload video"
                     resizeMode="contain"
                     className="w-1/2 h-1/2"
                   />
@@ -135,12 +136,14 @@ const Create = () => {
             {form.thumbnail ? (
               <Image
                 source={{ uri: form.thumbnail.uri }}
+                alt="Uploaded thumbnail"
                 resizeMode="cover"
                 className="w-full h-64 rounded-2xl"
               />
             ) : (
               <View className="w-full h-16 px-4 bg-black-100 rounded-2xl justify-center items-center border-2 border-black-200 flex-row space-x-2">
                 <Image
+                  alt="Upload thumbnail"
                   source={icons.upload}
                   resizeMode="contain"
                   className="w-5 h-5"

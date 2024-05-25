@@ -56,6 +56,7 @@ const Home = () => {
               <View className="flex flex-row space-x-4">
                 <Image
                   source={images.logoSmall}
+                  alt="Aora's small logo"
                   className="w-9 h-9"
                   resizeMode="contain"
                 />
@@ -67,6 +68,7 @@ const Home = () => {
                 >
                   <Image
                     source={images.github}
+                    alt="Source code"
                     className="w-7 h-7"
                     resizeMode="contain"
                   />

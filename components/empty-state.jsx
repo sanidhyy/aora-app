@@ -10,6 +10,7 @@ const EmptyState = ({ title, subtitle }) => {
     <View className="justify-center items-center px-4">
       <Image
         source={images.empty}
+        alt="No videos found"
         className="w-[272px] h-[215px]"
         resizeMode="contain"
       />
