@@ -7,7 +7,7 @@ import CustomButton from "../../components/custom-button";
 import FormField from "../../components/form-field";
 import { images } from "../../constants";
 import { useGlobalContext } from "../../context/global-provider";
-import { signIn } from "../../lib/appwrite";
+import { getCurrentUser, signIn } from "../../lib/appwrite";
 
 const SignIn = () => {
   const { setUser, setIsLoggedIn } = useGlobalContext();
@@ -26,7 +26,9 @@ const SignIn = () => {
     setIsSubmitting(true);
 
     try {
-      const result = await signIn(form.email, form.password);
+      await signIn(form.email, form.password);
+
+      const result = await getCurrentUser();
 
       setUser(result);
       setIsLoggedIn(true);

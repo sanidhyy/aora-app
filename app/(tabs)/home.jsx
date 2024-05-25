@@ -14,11 +14,13 @@ import SearchInput from "../../components/search-input";
 import Trending from "../../components/trending";
 import VideoCard from "../../components/video-card";
 import { images } from "../../constants";
+import { useGlobalContext } from "../../context/global-provider";
 import { getAllPosts, getLatestPosts } from "../../lib/appwrite";
 import useAppwrite from "../../lib/use-appwrite";
 
 const Home = () => {
-  const { data: posts, isLoading, refetch } = useAppwrite(getAllPosts);
+  const { user } = useGlobalContext();
+  const { data: posts, refetch } = useAppwrite(getAllPosts);
   const { data: latestPosts } = useAppwrite(getLatestPosts);
 
   const [refreshing, setRefreshing] = useState(false);
@@ -46,7 +48,7 @@ const Home = () => {
                 </Text>
 
                 <Text className="text-2xl text-psemibold text-white">
-                  John Doe
+                  {user?.username}
                 </Text>
               </View>
 
