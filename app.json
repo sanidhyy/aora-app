@@ -13,7 +13,8 @@
       "backgroundColor": "#161622"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sanidhya.aora"
     },
     "android": {
       "adaptiveIcon": {
@@ -38,9 +39,7 @@
       }
     },
     "owner": "devcoder0121",
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
+    "runtimeVersion": "1.0.0",
     "updates": {
       "url": "https://u.expo.dev/bf44059f-5996-4e67-852c-a64fc93654f9"
     }
