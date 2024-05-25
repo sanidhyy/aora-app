@@ -21,9 +21,6 @@ const GlobalProvider = ({ children }) => {
           setUser(null);
         }
       })
-      .catch((error) => {
-        console.error(error);
-      })
       .finally(() => setIsLoading(false));
   }, []);
 
