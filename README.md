@@ -87,7 +87,7 @@ aora-app/
 3. Create `.env.local` file in root folder.
 4. Contents of `.env.local`:
 
-```bash
+```env
 # .env.local
 
 # appwrite project
