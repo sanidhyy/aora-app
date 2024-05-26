@@ -7,15 +7,15 @@ import { images } from "../constants";
 
 const EmptyState = ({ title, subtitle }) => {
   return (
-    <View className="justify-center items-center px-4">
+    <View className="items-center justify-center px-4">
       <Image
         source={images.empty}
         alt="No videos found"
-        className="w-[272px] h-[215px]"
+        className="h-[215px] w-[272px]"
         resizeMode="contain"
       />
 
-      <Text className="text-xl text-center text-psemibold text-white mt-2">
+      <Text className="text-psemibold mt-2 text-center text-xl text-white">
         {title}
       </Text>
       <Text className="font-pmedium text-sm text-gray-100">{subtitle}</Text>

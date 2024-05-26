@@ -24,31 +24,31 @@ const Profile = () => {
   };
 
   return (
-    <SafeAreaView className="bg-primary h-full">
+    <SafeAreaView className="h-full bg-primary">
       <FlatList
         data={posts}
         keyExtractor={(item) => item.$id}
         renderItem={({ item }) => <VideoCard video={item} />}
         ListHeaderComponent={() => (
-          <View className="w-full justify-center items-center mt-6 mb-12 px-4">
+          <View className="mb-12 mt-6 w-full items-center justify-center px-4">
             <TouchableOpacity
-              className="w-full flex flex-row justify-end items-center space-x-2 mb-10"
+              className="mb-10 flex w-full flex-row items-center justify-end space-x-2"
               onPress={onLogout}
             >
-              <Text className="text-white text-lg font-pregular">Logout</Text>
+              <Text className="font-pregular text-lg text-white">Logout</Text>
               <Image
                 source={icons.logout}
                 alt="Logout"
                 resizeMode="contain"
-                className="w-6 h-6"
+                className="h-6 w-6"
               />
             </TouchableOpacity>
 
-            <View className="w-16 h-16 border border-secondary rounded-lg justify-center items-center">
+            <View className="h-16 w-16 items-center justify-center rounded-lg border border-secondary">
               <Image
                 source={{ uri: user?.avatar }}
                 alt={`${user?.username}'s profile picture`}
-                className="w-[90%] h-[90%] rounded-lg"
+                className="h-[90%] w-[90%] rounded-lg"
                 resizeMode="cover"
               />
             </View>

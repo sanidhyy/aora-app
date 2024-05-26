@@ -79,9 +79,9 @@ const Create = () => {
   };
 
   return (
-    <SafeAreaView className="bg-primary h-full">
-      <ScrollView className="px-4 my-6">
-        <Text className="text-2xl text-white text-psemibold">Upload Video</Text>
+    <SafeAreaView className="h-full bg-primary">
+      <ScrollView className="my-6 px-4">
+        <Text className="text-psemibold text-2xl text-white">Upload Video</Text>
 
         <FormField
           title="Video title"
@@ -93,7 +93,7 @@ const Create = () => {
         />
 
         <View className="mt-7 space-y-2">
-          <Text className="text-base text-gray-100 font-pmedium">
+          <Text className="font-pmedium text-base text-gray-100">
             Upload video
           </Text>
 
@@ -105,17 +105,17 @@ const Create = () => {
             {form.video ? (
               <Video
                 source={{ uri: form.video.uri }}
-                className="w-full h-64 rounded-2xl"
+                className="h-64 w-full rounded-2xl"
                 resizeMode={ResizeMode.COVER}
               />
             ) : (
-              <View className="w-full h-40 px-4 bg-black-100 rounded-2xl justify-center items-center">
-                <View className="w-14 h-14 border border-dashed border-secondary-100 justify-center items-center">
+              <View className="h-40 w-full items-center justify-center rounded-2xl bg-black-100 px-4">
+                <View className="h-14 w-14 items-center justify-center border border-dashed border-secondary-100">
                   <Image
                     source={icons.upload}
                     alt="Upload video"
                     resizeMode="contain"
-                    className="w-1/2 h-1/2"
+                    className="h-1/2 w-1/2"
                   />
                 </View>
               </View>
@@ -124,7 +124,7 @@ const Create = () => {
         </View>
 
         <View className="mt-7 space-y-2">
-          <Text className="text-base text-gray-100 text-pmedium">
+          <Text className="text-pmedium text-base text-gray-100">
             Thumbnail Image
           </Text>
 
@@ -138,18 +138,18 @@ const Create = () => {
                 source={{ uri: form.thumbnail.uri }}
                 alt="Uploaded thumbnail"
                 resizeMode="cover"
-                className="w-full h-64 rounded-2xl"
+                className="h-64 w-full rounded-2xl"
               />
             ) : (
-              <View className="w-full h-16 px-4 bg-black-100 rounded-2xl justify-center items-center border-2 border-black-200 flex-row space-x-2">
+              <View className="h-16 w-full flex-row items-center justify-center space-x-2 rounded-2xl border-2 border-black-200 bg-black-100 px-4">
                 <Image
                   alt="Upload thumbnail"
                   source={icons.upload}
                   resizeMode="contain"
-                  className="w-5 h-5"
+                  className="h-5 w-5"
                 />
 
-                <Text className="text-sm text-gray-100 font-pmedium">
+                <Text className="font-pmedium text-sm text-gray-100">
                   Choose a file
                 </Text>
               </View>

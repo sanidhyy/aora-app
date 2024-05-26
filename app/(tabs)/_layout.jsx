@@ -11,7 +11,7 @@ const TabIcon = ({ icon, color, name, focused }) => {
         alt={name}
         resizeMode="contain"
         tintColor={color}
-        className="w-4 h-4"
+        className="h-4 w-4"
       />
 
       <Text

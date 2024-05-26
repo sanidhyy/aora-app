@@ -42,17 +42,17 @@ const SignUp = () => {
   };
 
   return (
-    <SafeAreaView className="bg-primary h-full">
+    <SafeAreaView className="h-full bg-primary">
       <ScrollView>
-        <View className="w-full justify-center min-h-[83vh] px-4 my-6">
+        <View className="my-6 min-h-[83vh] w-full justify-center px-4">
           <Image
             source={images.logo}
             alt="Aora logo"
             resizeMode="contain"
-            className="w-[115px] h-[35px]"
+            className="h-[35px] w-[115px]"
           />
 
-          <Text className="text-2xl text-white text-semibold mt-10 font-psemibold">
+          <Text className="text-semibold mt-10 font-psemibold text-2xl text-white">
             Sign up to Aora
           </Text>
 
@@ -88,8 +88,8 @@ const SignUp = () => {
             isLoading={isSubmitting}
           />
 
-          <View className="justify-center pt-5 flex-row gap-2">
-            <Text className="text-gray-100 font-pregular">
+          <View className="flex-row justify-center gap-2 pt-5">
+            <Text className="font-pregular text-gray-100">
               Already have an account?
             </Text>
 

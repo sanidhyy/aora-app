@@ -35,20 +35,20 @@ const Home = () => {
   };
 
   return (
-    <SafeAreaView className="bg-primary h-full">
+    <SafeAreaView className="h-full bg-primary">
       <FlatList
         data={posts}
         keyExtractor={(item) => item.$id}
         renderItem={({ item }) => <VideoCard video={item} />}
         ListHeaderComponent={() => (
-          <View className="my-6 px-4 space-y-6">
-            <View className="justify-between items-start flex-row mb-6">
+          <View className="my-6 space-y-6 px-4">
+            <View className="mb-6 flex-row items-start justify-between">
               <View>
                 <Text className="font-pmedium text-sm text-gray-100">
                   Welcome back
                 </Text>
 
-                <Text className="text-2xl text-psemibold text-white">
+                <Text className="text-psemibold text-2xl text-white">
                   {user?.username}
                 </Text>
               </View>
@@ -57,7 +57,7 @@ const Home = () => {
                 <Image
                   source={images.logoSmall}
                   alt="Aora's small logo"
-                  className="w-9 h-9"
+                  className="h-9 w-9"
                   resizeMode="contain"
                 />
 
@@ -69,7 +69,7 @@ const Home = () => {
                   <Image
                     source={images.github}
                     alt="Source code"
-                    className="w-7 h-7"
+                    className="h-7 w-7"
                     resizeMode="contain"
                   />
                 </Link>
@@ -79,8 +79,8 @@ const Home = () => {
             <SearchInput />
 
             {/* Latest videos */}
-            <View className="w-full flex-1 pt-5 pb-8">
-              <Text className="text-gray-100 text-lg font-pregular">
+            <View className="w-full flex-1 pb-8 pt-5">
+              <Text className="font-pregular text-lg text-gray-100">
                 Latest Videos
               </Text>
 
