@@ -8,6 +8,44 @@
     "ios": "expo run:ios",
     "web": "expo start --web"
   },
+  "description": "Full-Stack AI Video Sharing Platform using Expo & React Native",
+  "keywords": [
+    "react",
+	"react-native",
+	"react-native-animatable",
+	"real-time",
+	"fullstack-react-native",
+	"expo",
+	"tailwindcss",
+	"nativewind",
+	"css",
+	"javascript",
+	"js",
+	"appwrite",
+	"appwrite-cloud",
+	"appwrite-realtime",
+	"appwrite-auth"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanidhyy/aora-app.git"
+  },
+  "homepage": "https://github.com/sanidhyy/aora-app#readme",
+  "bugs": {
+    "url": "https://github.com/sanidhyy/aora-app/issues",
+    "email": "sanidhya.verma12345@gmail.com"
+  },
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/sanidhy"
+    },
+    {
+      "type": "Buy me a coffee",
+      "url": "https://www.buymeacoffee.com/sanidhy"
+    }
+  ],
   "dependencies": {
     "@types/react": "~18.2.79",
     "expo": "~51.0.8",
