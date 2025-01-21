@@ -66,7 +66,7 @@
     "react-native-safe-area-context": "5.1.0",
     "react-native-screens": "3.31.1",
     "react-native-url-polyfill": "^2.0.0",
-    "typescript": "~5.4.5"
+    "typescript": "~5.7.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
