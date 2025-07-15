@@ -57,7 +57,7 @@
     "expo-navigation-bar": "^4.2.7",
     "expo-router": "~5.1.1",
     "expo-status-bar": "~2.2.3",
-    "expo-updates": "~0.28.16",
+    "expo-updates": "~0.28.17",
     "nativewind": "^4.1.23",
     "react": "18.2.0",
     "react-native": "0.80.1",
