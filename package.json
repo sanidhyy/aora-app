@@ -48,7 +48,7 @@
   ],
   "dependencies": {
     "@types/react": "~18.2.79",
-    "expo": "~53.0.13",
+    "expo": "~53.0.19",
     "expo-av": "^15.1.7",
     "expo-constants": "~17.1.7",
     "expo-document-picker": "^13.1.6",
