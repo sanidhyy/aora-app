@@ -52,7 +52,7 @@
     "expo": "~54.0.9",
     "expo-constants": "~17.1.7",
     "expo-document-picker": "^14.0.7",
-    "expo-image-picker": "^16.1.4",
+    "expo-image-picker": "^17.0.10",
     "expo-linking": "~8.0.8",
     "expo-navigation-bar": "^5.0.8",
     "expo-router": "~6.0.4",
