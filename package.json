@@ -50,7 +50,7 @@
     "@types/react": "~18.2.79",
     "expo-av": "^16.0.7",
     "expo": "~54.0.9",
-    "expo-constants": "~17.1.7",
+    "expo-constants": "~18.0.12",
     "expo-document-picker": "^14.0.7",
     "expo-image-picker": "^17.0.10",
     "expo-linking": "~8.0.8",
