@@ -59,7 +59,7 @@
     "expo-status-bar": "~3.0.9",
     "expo-updates": "~29.0.11",
     "nativewind": "^4.2.1",
-    "react": "18.2.0",
+    "react": "19.2.3",
     "react-native": "0.81.4",
     "react-native-animatable": "^1.4.0",
     "react-native-appwrite": "^0.19.0",
