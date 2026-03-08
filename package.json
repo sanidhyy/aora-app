@@ -54,7 +54,7 @@
     "expo-document-picker": "^14.0.7",
     "expo-image-picker": "^17.0.10",
     "expo-linking": "~55.0.7",
-    "expo-navigation-bar": "^5.0.8",
+    "expo-navigation-bar": "^55.0.8",
     "expo-router": "~55.0.3",
     "expo-status-bar": "~55.0.4",
     "expo-updates": "~55.0.12",
