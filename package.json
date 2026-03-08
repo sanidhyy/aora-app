@@ -51,7 +51,7 @@
     "expo-av": "^16.0.7",
     "expo": "~54.0.9",
     "expo-constants": "~55.0.7",
-    "expo-document-picker": "^14.0.7",
+    "expo-document-picker": "^55.0.8",
     "expo-image-picker": "^17.0.10",
     "expo-linking": "~55.0.7",
     "expo-navigation-bar": "^55.0.8",
