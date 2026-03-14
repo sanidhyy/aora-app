@@ -60,7 +60,7 @@
     "expo-updates": "~55.0.12",
     "nativewind": "^4.2.1",
     "react": "18.2.0",
-    "react-native": "0.84.0",
+    "react-native": "0.84.1",
     "react-native-animatable": "^1.4.0",
     "react-native-appwrite": "^0.25.0",
     "react-native-screens": "4.24.0",
