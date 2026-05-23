@@ -55,7 +55,7 @@
     "expo-image-picker": "^55.0.12",
     "expo-linking": "~55.0.7",
     "expo-navigation-bar": "^55.0.8",
-    "expo-router": "~55.0.3",
+    "expo-router": "~56.2.6",
     "expo-status-bar": "~55.0.4",
     "expo-updates": "~55.0.12",
     "nativewind": "^4.2.1",
