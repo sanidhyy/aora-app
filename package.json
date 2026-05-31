@@ -64,7 +64,7 @@
     "react-native-animatable": "^1.4.0",
     "react-native-appwrite": "^0.31.0",
     "react-native-screens": "4.25.2",
-    "react-native-safe-area-context": "5.7.0",
+    "react-native-safe-area-context": "5.8.0",
     "react-native-url-polyfill": "^3.0.0",
     "typescript": "~6.0.2"
   },
